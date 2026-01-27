@@ -4,47 +4,265 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YachtJet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- normalizer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" integrity="sha512-6vVDKjypi9edZc0plLTyYuWSM6E+oQCH9cJbsaKFvsajojwPjgqutD5mypLKUalFKV7blxIwqTNAxD2CW1XiNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end normalizer -->
 </head>
 <body>
-    <header>
-        <a href=".index.html">yachtjet</a>
-        <nav>  
-            <ul>
-                <li><a href="#about">Home</a></li>
-                <li><a href="#yachts">Yachts</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-            </ul>
-        </nav>
-         <ul>
-            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-            <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        </ul>
+    <header class="main-header">
+            <div class="container header-container">
+                 <a class="logo" href=".index.html">yachtjet</a>
+                    <nav class="main-nav">  
+                         <ul class="nav-list">
+                            <li class="nav-list-item">
+                                <a class="header-nav-link" href="#about">Home</a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a class="header-nav-link" href="#yachts">Yachts</a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a class="header-nav-link" href="#reviews">Reviews</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="header-social-list">
+                        <li class="header-social-item"><a href="https://www.instagram.com" target="_blank">I</a></li>
+                        <li class="header-social-item"><a href="https://www.youtube.com" target="_blank">Y</a></li>
+                        <li class="header-social-item"><a href="https://www.facebook.com" target="_blank">F</a></li>
+                    </ul>
+            </div>
     </header>
     <main>
-        <section id="">
-            <h1>Explore the High Seas with Our Luxury Yacht Rentals</h1>
-            <p>
-                Experience the freedom and luxury of yachting on the open seas. Choose from our top-of-the-line yachts and embark on an unforgettable journey surrounded by breathtaking views and state-of-the-art amenities.
-            </p>
-            <a href="">Yacht rental</a>
-        </section>
-
-        <section id="about">
-            <h2>About Us</h2>
-            <p>YachtJet is dedicated to providing exceptional yacht rental experiences for all our clients.</p>
-        </section>
-        <section id="yachts">
-            <h2>Destinations</h2>
-            <p>Discover breathtaking destinations around the world with YachtJet.</p>
-        </section>
-        <section id="reviews">
-            <h2>Contact Us</h2>
-            <p>Get in touch with our team to plan your unforgettable yacht experience.</p>
-        </section>
+        <div class="container">
+            <section id="explore" class="explore-hero">
+                <h1 class="explore-title">
+                    Explore the High Seas with Our Luxury Yacht Rentals
+                </h1>
+                <p class="explore-content">
+                    Experience the freedom and luxury of yachting on the open seas. Choose from our top-of-the-line yachts and embark on an unforgettable journey surrounded by breathtaking views and state-of-the-art amenities.
+                </p>
+                    <a class="explore-button" href="">Yacht rental</a>
+            </section>
+            <section id="about-yacht" class="about-yacht">
+                <div class="about-yacht-text-wrap">
+                    <h2 class="about-yacht-title">
+                        YachtJet fleet is here to take you on the ultimate adventure
+                    </h2>
+                    <div class="about-yacht-content">
+                        <p class="about-yacht-content-1">
+                        YachtJet fleet is here to take you on the ultimate adventure
+                        From spacious decks to state-of-the-art technology, our yachts are designed to provide the perfect blend of luxury and functionality.
+                        </p>
+                        <p class="about-yacht-content-2">
+                        Take a look at our selection below and choose the yacht that matches your needs and preferences.No matter which yacht you choose, our experienced crew will ensure that your journey is smooth and enjoyable. Book now and get ready for an unforgettable adventure on the high seas.
+                        </p>
+                    </div>
+                </div>
+                <img class="about-yacht-img" src="images/YachtJet fleet.png" alt="YachtJet Fleet">
+            </section>
+            <section id="yachts" class="section-yachts">
+                <h2 class="section-yachts-title">Choose your dream yacht and sail away into the sunset</h2>
+                <ul class="section-yachts-list">
+                    <li class="section-yachts-list-item">
+                        <div class="section-yachts-item-imgwrap">
+                            <img class="section-yachts-img" src="images/arrow.png" alt="">
+                        </div>
+                        <div class="section-yachts-item-wrap section-yachts-item-main-wrap border-bottom">
+                            <h3 class="section-yachts-list-title">Arrow</h3>
+                            <p class="section-yachts-type">LUXURY YAHTS</p>
+                        </div>
+                        <div class="section-yachts-item-wrap">
+                            <p class="section-yachts-lenght">LENGTH  </p>
+                            <span class="section-yachts-lenght-info">48m(155ft) </span>
+                        </div>
+                        <div class="section-yachts-item-wrap">
+                            <p class="section-yachts-builder">BUILDER </p>
+                            <span class="section-yachts-builder-info">Admiral</span>
+                        </div>
+                        <div class="section-yachts-item-wrap">
+                            <p class="section-yachts-built">BUILT </p>
+                            <span class="section-yachts-built-info">2021</span>
+                        </div>
+                        <div class="section-yachts-item-wrap">
+                            <p class="section-yachts-guests">GUESTS </p>
+                            <span class="section-yachts-guests-info">11 in 5 cabins</span>
+                        </div>
+                        <div class="section-yachts-item-wrap">
+                            <p class="section-yachts-price">PRICE</p>
+                            <span class="section-yachts-price-info">€33,500,000</span>
+                        </div>
+                    </li>
+                    <li class="section-yachts-list-item">
+                        <div class="section-yachts-item-imgwrap">
+                            <img class="section-yachts-img" src="images/Benetti oasis.png" alt="">
+                        </div>
+                        <div class="section-yachts-item-wrap section-yachts-item-main-wrap border-bottom">
+                            <h3 class="section-yachts-list-title">BENETTI OASIS 40M BO122</h3>
+                            <p class="section-yachts-type">LUXURY YAHTS</p>
+                        </div>
+                        <div class="section-yachts-item-wrap">
+                            <p class="section-yachts-lenght">LENGTH  </p>
+                            <span class="section-yachts-lenght-info">48m(155ft) </span>
+                        </div>
+                        <div class="section-yachts-item-wrap">
+                            <p class="section-yachts-shipyard">SHIPYARD </p>
+                            <span class="section-yachts-shipyard-info">Admiral</span>
+                        </div>
+                        <div class="section-yachts-item-wrap">
+                            <p class="section-yachts-built">BUILT </p>
+                            <span class="section-yachts-built-info">2021</span>
+                        </div>
+                        <div class="section-yachts-item-wrap">
+                            <p class="section-yachts-guests">GUESTS </p>
+                            <span class="section-yachts-guests-info">11 in 5 cabins</span>
+                        </div>
+                        <div class="section-yachts-item-wrap">
+                            <p class="section-yachts-price">PRICE</p>
+                            <span class="section-yachts-price-info">€33,500,000</span>
+                        </div>
+                    </li>
+                    <li class="section-yachts-list-item">
+                        <div class="section-yachts-item-imgwrap">
+                            <img class="section-yachts-img" src="images/bella anna.png" alt="Bella Anna">
+                        </div>    
+                        <div class="section-yachts-item-wrap section-yachts-item-main-wrap border-bottom">
+                            <h3 class="section-yachts-list-title">BELLE ANNA</h3>
+                            <p class="section-yachts-type">LUXURY YAHTS</p>
+                        </div>  
+                        <div class="section-yachts-item-wrap">
+                            <p class="section-yachts-lenght">LENGTH  </p>
+                            <span class="section-yachts-lenght-info">48m(155ft) </span> 
+                        </div>   
+                        <div class="section-yachts-item-wrap">
+                            <p class="section-yachts-shipyard">SHIPYARD </p>
+                            <span class="section-yachts-shipyard-info">Admiral</span>
+                        </div>  
+                        <div class="section-yachts-item-wrap">
+                            <p class="section-yachts-built">BUILT </p>
+                            <span class="section-yachts-built-info">2021</span>
+                        </div>  
+                        <div class="section-yachts-item-wrap">
+                            <p class="section-yachts-guests">GUESTS </p>
+                            <span class="section-yachts-guests-info">11 in 5 cabins</span>
+                        </div>  
+                        <div class="section-yachts-item-wrap">
+                            <p class="section-yachts-price">PRICE</p>
+                            <span class="section-yachts-price-info">€33,500,000</span>
+                        </div>
+                    </li>
+                </ul>
+                <a class="button-yachts-rental">Yacht rental</a>
+            </section>
+            <section class="yacht-services">
+                <h2 class="yacht-services-title">Our Yacht Services</h2>
+                <ul class="yacht-services-list">
+                    <li class="yacht-services-list-item">
+                        <h3 class="yacht-services-item-title">01</h3>
+                        <p class="yacht-services-item-content">
+                            Swimming and water sports: try your hand at water skiing
+                        </p>
+                    </li>
+                    <li class="yacht-services-list-item">
+                        <h3 class="yacht-services-item-title">02</h3>
+                        <p class="yacht-services-item-content">
+                            Fishing: try to catch your own dinner    
+                        </p>
+                    </li>
+                    <li class="yacht-services-list-item">
+                        <h3 class="yacht-services-item-title">03</h3>
+                        <p class="yacht-services-item-content">
+                            Sightseeing tours: take a shore or island tour, enjoy the views and sunsets from the water 
+                        </p>
+                    </li>
+                    <li class="yacht-services-list-item">
+                        <h3 class="yacht-services-item-title">04</h3>
+                        <p class="yacht-services-item-content">
+                            Rest and relaxation: read a book or listen to music while enjoying the outdoor atmosphere.
+                        </p>
+                </ul>
+                <img class="yacht-services-img" src="images/yavht-services.jpg" alt="Yacht Services" width="432px">
+            </section>
+            <section id="rent form" class="rent-form">
+                <img src="images/rent-form-img.jpg" alt="YachtJet" class="rent-form-img" width="658px">
+                <div class="title-plus-form">
+                    <h2 class="rent-form-title">Rent a yacht now</h2>
+                    <p class="rent-form-content">
+                        At YachtJet, we are passionate about providing our clients with the ultimate yachting experience. With a fleet of luxurious yachts and a team of experienced crew members, we are dedicated to making your dream yacht vacation a reality. Whether you're looking for a romantic getaway or an adventurous family trip, we have the perfect yacht for you. Our commitment to excellence and attention to detail ensures that every aspect of your journey is seamless and unforgettable. Join us on the high seas and discover the true meaning of luxury yachting with YachtJet.
+                    </p>
+                    <a class="rent-form-button">Send</a>
+                </div>
+            </section>
+            <section id="our-customers " class="our-customers">
+                <h2 class="our-customers-title">
+                    YachtJet take pride in providing the best possible service and experience to our customers
+                </h2>
+                <p class="our-customers-content">
+                    Our customers have enjoyed unforgettable moments on our yachts. Don't just take our word for it - read on to find out what they have to say about their journey with us.
+                </p>
+                <ul class="our-customers-list">
+                    <li class="our-customers-list-item">
+                        <img class="our-customers-item-img" src="images/customer1.png" alt="Customer 1">
+                        <h3 class="our-customers-item-title">John D.</h3>
+                        <p class="our-customers-item-content">
+                            "YachtJet provided an unforgettable experience. The yacht was luxurious, the crew was attentive, and the destinations were breathtaking. Highly recommend!" 
+                        </p>
+                    </li>
+                    <li class="our-customers-list-item">
+                        <img class="our-customers-item-img" src="images/customer2.png" alt="Customer 2">
+                        <h3 class="our-customers-item-title">Sarah K.</h3>
+                        <p class="our-customers-item-content">
+                            "From start to finish, YachtJet exceeded my expectations. The yacht was beautiful, the food was delicious, and the crew went above and beyond to ensure our comfort. Can't wait to book my next trip!"  
+                        </p>
+                    </li>
+                    <li class="our-customers-list-item">
+                        <img class="our-customers-item-img" src="images/customer3.png" alt="Customer 3">
+                        <h3 class="our-customers-item-title">Michael S.</h3>
+                        <p class="our-customers-item-content">
+                            "YachtJet provided an unforgettable experience. The yacht was luxurious, the crew was attentive, and the destinations were breathtaking. Highly recommend!"
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <!-- <section id="reviews">
+                <h2>Contact Us</h2>
+                <p>Get in touch with our team to plan your unforgettable yacht experience.</p>
+            </section> -->
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2024 YachtJet. All rights reserved.</p>
+   <footer class="main-footer">
+            <div class="container-footer">
+                 <a class="logo" href=".index.html">yachtjet</a>
+                    <nav class="main-nav">  
+                         <ul class="nav-list">
+                            <li class="nav-list-item">
+                                <a class="header-nav-link" href="#about">Home</a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a class="header-nav-link" href="#yachts">Yachts</a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a class="header-nav-link" href="#reviews">Reviews</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="header-social-list">
+                        <li class="header-social-item"><a href="https://www.instagram.com" target="_blank">I</a></li>
+                        <li class="header-social-item"><a href="https://www.youtube.com" target="_blank">Y</a></li>
+                        <li class="header-social-item"><a href="https://www.facebook.com" target="_blank">F</a></li>
+                    </ul>
+                    <p class="footer-text">
+                        No matter which yacht you choose, our experienced crew will ensure that your journey is smooth and enjoyable.
+                    </p>
+                    <p class="footer-copyright">
+                        © 2024 YachtJet. All rights reserved.   
+                    </p>
+            </div>
     </footer>
     
 </body>
